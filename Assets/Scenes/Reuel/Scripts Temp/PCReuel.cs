@@ -40,13 +40,14 @@ public class PCReuel : MonoBehaviour
         //Animation
         //Run
         animator.SetFloat("Speed", Mathf.Abs(inputX));
-        //To flip
+
+        //To properflip horizontally
         if (targetSpeed != 0)//means running
         {
             bool flippers = targetSpeed < 0;
             transform.rotation = Quaternion.Euler(new Vector3(0f, flippers ? 180f : 0f, 0f));
         }
-
+        
         // If airborne, reduce control
         float accel = isGrounded ? acceleration : acceleration * airControlFactor;
         float decel = isGrounded ? deceleration : deceleration * airControlFactor;
@@ -98,12 +99,7 @@ public class PCReuel : MonoBehaviour
             }
         }
 
-        // ---------------- FLIP GRAVITY ----------------
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Physics2D.gravity *= -1;
-            transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
-        }
+        
     }
 
     void OnDrawGizmosSelected()

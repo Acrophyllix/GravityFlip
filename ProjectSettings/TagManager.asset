@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Sprite
+  - HeavyBox
+  - LightBox
+  - HeavySwitch
+  - LightSwitch
   layers:
   - Default
   - TransparentFX
