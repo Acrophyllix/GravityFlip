@@ -97,3 +97,21 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+Assets/NewObediente.meta
+Assets/NewObediente/Obediente/World1FunctionalLayouts/World 1.unity
+Assets/Scenes/Reuel/Animation/idle 1.anim
+Assets/Scenes/Reuel/Animation/idle 1.anim.meta
+Assets/Scenes/Reuel/Animation/Laser.controller
+Assets/Scenes/Reuel/Prefab/Switches/gHeavy Switch .prefab.meta
+Assets/Scenes/Reuel/Prefab/Switches/gLight Switch .prefab
+Assets/Scenes/Reuel/Sprites/idle.anim.meta
+Assets/Scenes/Reuel/Sprites/Laser.controller.meta
+Assets/NewObediente.meta
+Assets/NewObediente/Obediente/World1FunctionalLayouts/World 1.unity
+Assets/Scenes/Reuel/Animation/idle 1.anim
+Assets/Scenes/Reuel/Animation/idle 1.anim.meta
+Assets/Scenes/Reuel/Animation/Laser.controller
+Assets/Scenes/Reuel/Prefab/Switches/gHeavy Switch .prefab.meta
+Assets/Scenes/Reuel/Prefab/Switches/gLight Switch .prefab
+Assets/Scenes/Reuel/Sprites/idle.anim.meta
+Assets/Scenes/Reuel/Sprites/Laser.controller.meta

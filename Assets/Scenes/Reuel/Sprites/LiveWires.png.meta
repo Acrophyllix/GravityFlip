@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 413532d005fdee94a975cb3fc8b9f3c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3739311463783216863
+    second: LiveWires_0
+  - first:
+      213: 5502177968075530172
+    second: LiveWires_1
+  - first:
+      213: -5513008299121920240
+    second: LiveWires_2
+  - first:
+      213: 4905207804800553023
+    second: LiveWires_3
+  - first:
+      213: 2632291030223014504
+    second: LiveWires_4
+  - first:
+      213: 6788391631838168269
+    second: LiveWires_5
+  - first:
+      213: 1757985403306124077
+    second: LiveWires_6
+  - first:
+      213: -4051696428414823075
+    second: LiveWires_7
+  - first:
+      213: 6122910462941234118
+    second: LiveWires_8
+  - first:
+      213: 4244834556350706206
+    second: LiveWires_9
+  - first:
+      213: 731825461591049886
+    second: LiveWires_10
+  - first:
+      213: 4577345324747292258
+    second: LiveWires_11
+  - first:
+      213: -8804438474557160945
+    second: LiveWires_12
+  - first:
+      213: -8999103135907753888
+    second: LiveWires_13
+  - first:
+      213: 2280978291621429558
+    second: LiveWires_14
+  - first:
+      213: 2991377031669801693
+    second: LiveWires_15
+  - first:
+      213: -4218047298666903117
+    second: LiveWires_16
+  - first:
+      213: -3081276581138253026
+    second: LiveWires_17
+  - first:
+      213: 3302203728957993795
+    second: LiveWires_18
+  - first:
+      213: -5564163120514353637
+    second: LiveWires_19
+  - first:
+      213: 6132736066481263282
+    second: LiveWires_20
+  - first:
+      213: -7720025188121347321
+    second: LiveWires_21
+  - first:
+      213: 5192296240189911622
+    second: LiveWires_22
+  - first:
+      213: 2458842428058411235
+    second: LiveWires_23
+  - first:
+      213: 2297722035334486361
+    second: LiveWires_24
+  - first:
+      213: -7175017950392515804
+    second: LiveWires_25
+  - first:
+      213: -7736709021313849401
+    second: LiveWires_26
+  - first:
+      213: 538392124016094961
+    second: LiveWires_27
+  - first:
+      213: -8883671001204373673
+    second: LiveWires_28
+  - first:
+      213: -8206868065672656634
+    second: LiveWires_29
+  - first:
+      213: -2562623712914726514
+    second: LiveWires_30
+  - first:
+      213: 7502559922665450246
+    second: LiveWires_31
+  - first:
+      213: 2143733508825072610
+    second: LiveWires_32
+  - first:
+      213: -1270595548863186654
+    second: LiveWires_33
+  - first:
+      213: -9205998688818334309
+    second: LiveWires_34
+  - first:
+      213: 8389015837205796265
+    second: LiveWires_35
+  - first:
+      213: -2573127371636895985
+    second: LiveWires_36
+  - first:
+      213: -5833033574765456735
+    second: LiveWires_37
+  - first:
+      213: 1224586873156569469
+    second: LiveWires_38
+  - first:
+      213: 6200528596986621223
+    second: LiveWires_39
+  - first:
+      213: -5791952635440374293
+    second: LiveWires_40
+  - first:
+      213: 4650545440775032320
+    second: LiveWires_41
+  - first:
+      213: -1451368785753674201
+    second: LiveWires_42
+  - first:
+      213: -4227963809440703750
+    second: LiveWires_43
+  - first:
+      213: 6418027554133388222
+    second: LiveWires_44
+  - first:
+      213: 5358110658771206252
+    second: LiveWires_45
+  - first:
+      213: 2014774975409917631
+    second: LiveWires_46
+  - first:
+      213: -2682015801978237912
+    second: LiveWires_47
+  - first:
+      213: -894695422214723831
+    second: LiveWires_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LiveWires_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129c7a0190c4b1cc0800000000000000
+      internalID: -3739311463783216863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017be0f392cdd73b0800000000000000
+      internalID: -5513008299121920240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23226cf86e956810800000000000000
+      internalID: 1757985403306124077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d559d9ea09b75c7c0800000000000000
+      internalID: -4051696428414823075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aba3c481b9cf8142a34e7da48f629e6
+      internalID: 5502177968075530172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51762df912f692b43bc916c0ea5cc0ff
+      internalID: 4905207804800553023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd8e6a949d4a446bf8772f8b43dcf5
+      internalID: 2632291030223014504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411d77e6748c10a43a1a4729eb03658b
+      internalID: 6788391631838168269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449402a1eb5c9ae47bffbdb2d012ad13
+      internalID: 6122910462941234118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a21ae29a76641641b027071151eeb82
+      internalID: 4244834556350706206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7915fa0abdfdac4f824a14b72b8e5c9
+      internalID: 731825461591049886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e9a48b46331334db191d9b9b062074
+      internalID: 4577345324747292258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveWires_12
+      rect:
+        serializedVersion: 2
+        x: 4796
+        y: 92
+        width: 393
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a834c5ae0f719e49b435700735b663f
+      internalID: -8804438474557160945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bfe46883f84af6241b3837e7c9a63a5c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LiveWires_0: -3739311463783216863
+      LiveWires_1: 5502177968075530172
+      LiveWires_10: 731825461591049886
+      LiveWires_11: 4577345324747292258
+      LiveWires_12: -8804438474557160945
+      LiveWires_2: -5513008299121920240
+      LiveWires_3: 4905207804800553023
+      LiveWires_4: 2632291030223014504
+      LiveWires_5: 6788391631838168269
+      LiveWires_6: 1757985403306124077
+      LiveWires_7: -4051696428414823075
+      LiveWires_8: 6122910462941234118
+      LiveWires_9: 4244834556350706206
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
