@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class PCArk : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 8f;
-
     public float groundCheckDistance = 0.6f;
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
     private bool isGrounded;
 
+    [Header("Animation")]
     public Animator animator;
 
     private bool boxInRange = false;
@@ -22,37 +23,43 @@ public class PCArk : MonoBehaviour
 
     void Update()
     {
+        // --- BOX INTERACTION ---
         if (boxInRange && Input.GetKey(KeyCode.E))
         {
-            boxRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX; // unlock X for pushing
+            // Unlock X movement to allow pushing
+            boxRb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
         }
         else if (boxInRange)
         {
-            boxRb.constraints |= RigidbodyConstraints2D.FreezePositionX; // stay locked
+            // Lock X movement when not pushing
+            boxRb.constraints |= RigidbodyConstraints2D.FreezePositionX;
         }
 
+        // --- PLAYER MOVEMENT ---
         float inputX = Input.GetAxisRaw("Horizontal");
-
         animator.SetFloat("Speed", Mathf.Abs(inputX));
 
         if (inputX != 0)
         {
-            bool flippers = inputX < 0;
-            transform.rotation = Quaternion.Euler(new Vector3(0f, flippers ? 180f : 0f, 0f));
+            bool facingLeft = inputX < 0;
+            transform.rotation = Quaternion.Euler(0f, facingLeft ? 180f : 0f, 0f);
         }
 
         rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
 
+        // --- GROUND CHECK ---
         Vector2 checkDirection = Physics2D.gravity.normalized;
-        Vector2 origin = (Vector2)transform.position;
+        Vector2 origin = transform.position;
         RaycastHit2D hit = Physics2D.Raycast(origin, checkDirection, groundCheckDistance, groundLayer);
         isGrounded = hit.collider != null;
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("rHeavyBox") || other.gameObject.CompareTag("gHeavyBox") ||
-            other.gameObject.CompareTag("gLightBox") || other.gameObject.CompareTag("rLightBox"))
+        if (other.gameObject.CompareTag("rHeavyBox") ||
+            other.gameObject.CompareTag("gHeavyBox") ||
+            other.gameObject.CompareTag("gLightBox") ||
+            other.gameObject.CompareTag("rLightBox"))
         {
             boxRb = other.gameObject.GetComponent<Rigidbody2D>();
             boxRb.constraints |= RigidbodyConstraints2D.FreezePositionX;
@@ -62,8 +69,10 @@ public class PCArk : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("rHeavyBox") || other.gameObject.CompareTag("gHeavyBox") ||
-            other.gameObject.CompareTag("gLightBox") || other.gameObject.CompareTag("rLightBox"))
+        if (other.gameObject.CompareTag("rHeavyBox") ||
+            other.gameObject.CompareTag("gHeavyBox") ||
+            other.gameObject.CompareTag("gLightBox") ||
+            other.gameObject.CompareTag("rLightBox"))
         {
             boxInRange = false;
             boxRb = null;

@@ -38,13 +38,12 @@ public class PCReuel : MonoBehaviour
         Physics2D.queriesStartInColliders = false;
         RaycastHit2D hit1 = Physics2D.Raycast(transform.position, transform.right, distance, boxMask);
       
-        if (
-            hit1.collider != null &&
+        if (hit1.collider != null &&
             (
-                hit1.collider.gameObject.tag == "rHeavyBox" ||
-                hit1.collider.gameObject.tag == "rLightBox" ||
-                hit1.collider.gameObject.tag == "gHeavyBox" ||
-                hit1.collider.gameObject.tag == "gLightBox"
+            hit1.collider.gameObject.tag == "rHeavyBox" ||
+            hit1.collider.gameObject.tag == "rLightBox" ||
+            hit1.collider.gameObject.tag == "gHeavyBox" ||
+            hit1.collider.gameObject.tag == "gLightBox"
             )
             && Input.GetKeyDown(KeyCode.E))
         {
@@ -53,7 +52,14 @@ public class PCReuel : MonoBehaviour
             box1.GetComponent<FixedJoint2D>().enabled = true;
             box1.GetComponent<FixedJoint2D>().connectedBody = GetComponent<Rigidbody2D>();
             
-        }else if (Input.GetKeyUp(KeyCode.E))
+        }else if (hit1.collider != null &&
+            (
+            hit1.collider.gameObject.tag == "rHeavyBox" ||
+            hit1.collider.gameObject.tag == "rLightBox" ||
+            hit1.collider.gameObject.tag == "gHeavyBox" ||
+            hit1.collider.gameObject.tag == "gLightBox"
+            )
+            &Input.GetKeyUp(KeyCode.E))
             {
                 Debug.Log("Released");
                 box1.GetComponent<FixedJoint2D>().enabled = false;
@@ -88,7 +94,9 @@ public class PCReuel : MonoBehaviour
             if(other.CompareTag("Spikers")||other.CompareTag("LiveWires"))
             {   
                 _playerImmunity = true;
+                StartCoroutine(PlayerImmuneAni());
                 StartCoroutine(PlayerImmune());
+                
                 _playerLives -= 1;
                 livesText.text = _playerLives.ToString();
             }
@@ -104,6 +112,17 @@ public class PCReuel : MonoBehaviour
         _playerImmunity = false;
     }
 
+    IEnumerator PlayerImmuneAni(){
+        Renderer body = this.gameObject.GetComponent<Renderer>();
+            
+            while(_playerImmunity == true){
+            body.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            body.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            
+            }
+    }
    
  
 }
