@@ -28,10 +28,6 @@ public class WinLose : MonoBehaviour
     public GameObject WIN;
     public GameObject PanelBox;
 
-    public GameObject mainMenuButton;
-    public GameObject restartButton;
-    public GameObject nextLevelButton;
-
     public int score;
     public int previousScoreLevel;
     public static int  nextScoreLevel;
@@ -75,7 +71,7 @@ public class WinLose : MonoBehaviour
             }else{
 
                 _timer -= Time.deltaTime;
-                _timerText.text = $"Timer: {(int)_timer}";
+                _timerText.text = $"{(int)_timer}";
             }
         }
 
@@ -97,7 +93,7 @@ public class WinLose : MonoBehaviour
         }
 
         PanelBox.SetActive(true);
-        nextLevelButton.SetActive(false);
+
 
         //Accumulate the score
         _totalTime = (int)_playerScript.totalTime;
@@ -125,8 +121,7 @@ public class WinLose : MonoBehaviour
 
 
         PanelBox.SetActive(true);
-        mainMenuButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(-209f, -291.8f);
-        restartButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(-6f, -288f);
+
 
         _totalTime = (int)_playerScript.totalTime;
         int totalTimeScore = 120 - _totalTime / 5;

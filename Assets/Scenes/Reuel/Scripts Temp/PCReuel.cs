@@ -14,7 +14,9 @@ public class PCReuel : MonoBehaviour
     public string lastHitHazard;
 
     //Lives
-    public TextMeshProUGUI livesText;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
 
 
     private Rigidbody2D rb;
@@ -42,7 +44,6 @@ public class PCReuel : MonoBehaviour
 
     void Start()
     {   
-        livesText.text = _playerLives.ToString();
         rb = GetComponent<Rigidbody2D>();
 
 
@@ -57,6 +58,7 @@ public class PCReuel : MonoBehaviour
     void Update()
     {
 
+        
 
         //Updating vars for socring
         lives = _playerLives;
@@ -154,7 +156,8 @@ public class PCReuel : MonoBehaviour
                 StartCoroutine(PlayerImmune());
                 
                 _playerLives -= 1;
-                livesText.text = _playerLives.ToString();
+                //Updating Lives 
+                LivesCounter();
             }
         }else if(_playerImmunity){
             Debug.Log("Immune");   
@@ -169,7 +172,19 @@ public class PCReuel : MonoBehaviour
         }
     }
 
+    void LivesCounter(){
+        
+        switch(lives){
 
+            case 0: heart1.SetActive(false);
+                break;
+            case 1: heart2.SetActive(false);
+                break;
+            case 2: heart3.SetActive(false);
+                break;
+        }
+
+    }
 
     IEnumerator PlayerImmune(){
         Debug.Log("Immunity On");
