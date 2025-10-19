@@ -56,9 +56,7 @@ public class PCReuel : MonoBehaviour
     }
 
     void Update()
-    {
-
-        
+    {   
 
         //Updating vars for socring
         lives = _playerLives;
@@ -156,8 +154,9 @@ public class PCReuel : MonoBehaviour
                 StartCoroutine(PlayerImmune());
                 
                 _playerLives -= 1;
-                //Updating Lives 
                 LivesCounter();
+                //Updating Lives 
+                
             }
         }else if(_playerImmunity){
             Debug.Log("Immune");   
@@ -173,14 +172,16 @@ public class PCReuel : MonoBehaviour
     }
 
     void LivesCounter(){
-        
-        switch(lives){
+    
+        switch(_playerLives){
 
             case 0: heart1.SetActive(false);
                 break;
             case 1: heart2.SetActive(false);
                 break;
             case 2: heart3.SetActive(false);
+                break;
+            default: Debug.Log("No Damage");
                 break;
         }
 

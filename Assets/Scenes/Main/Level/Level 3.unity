@@ -1793,7 +1793,7 @@ PrefabInstance:
     - target: {fileID: 8478407634850175400, guid: 768a8dea2efc50044a253a72e291b949, type: 3}
       propertyPath: loseSpike
       value: 
-      objectReference: {fileID: 1320444087}
+      objectReference: {fileID: 25427602}
     - target: {fileID: 8478407634850175400, guid: 768a8dea2efc50044a253a72e291b949, type: 3}
       propertyPath: _stateText
       value: 
@@ -2633,7 +2633,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -7785,7 +7785,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1790998513}
         m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
-        m_MethodName: OnPauseButtonPressed
+        m_MethodName: ResumeCircular
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8632,7 +8632,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -8959,7 +8959,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -11896,7 +11896,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -13183,7 +13183,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -21983,7 +21983,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -37043,7 +37043,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -37330,7 +37330,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -39280,7 +39280,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020638792}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1

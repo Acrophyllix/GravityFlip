@@ -23,9 +23,9 @@ public class PauseMenuManager : MonoBehaviour
             PauseGame();
             ToggleCircularMenu();
         }
-        else
+        else if(isPaused)
         {
-            ToggleCircularMenu();
+            ResumeGame();
         }
     }
 
