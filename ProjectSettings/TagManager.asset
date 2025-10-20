@@ -20,6 +20,10 @@ TagManager:
   - LiveWires
   - Laser
   - Hazards
+  - Collectible
+  - Intro
+  - PressureCollision
+  - HazardTrigger
   layers:
   - Default
   - TransparentFX
