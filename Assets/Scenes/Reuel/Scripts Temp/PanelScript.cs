@@ -161,5 +161,11 @@ public class WinLose : MonoBehaviour
         mixer.SetFloat("SoundEffects", 0f);
     }
 
-    
+    public void SetTimerEnabled(bool value)
+    {
+        timerEnabled = value;
+    }
+
+
+
 }
