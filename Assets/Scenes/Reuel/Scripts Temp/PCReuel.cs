@@ -13,6 +13,12 @@ public class PCReuel : MonoBehaviour
     public bool connectedToBox; 
     public string lastHitHazard;
 
+    //Mobile Movement 
+    private bool holdingBox;
+    private bool notHoldingBox;
+    private bool flipSwitch;
+    float inputX = 0f;
+
     //Lives
     public GameObject heart1;
     public GameObject heart2;
@@ -73,7 +79,7 @@ public class PCReuel : MonoBehaviour
             hit1.collider.gameObject.tag == "gHeavyBox" ||
             hit1.collider.gameObject.tag == "gLightBox"
             )
-            && Input.GetKeyDown(KeyCode.E))
+            && holdingBox)
         {
 
             box1 = hit1.collider.gameObject;
@@ -83,7 +89,7 @@ public class PCReuel : MonoBehaviour
             connectedToBox = true;
             
 
-        }else if ( box1 != null && Input.GetKeyUp(KeyCode.E))
+        }else if ( box1 != null && !holdingBox)
             {
                 Debug.Log("Released");
                 box1.GetComponent<FixedJoint2D>().enabled = false;
@@ -95,8 +101,9 @@ public class PCReuel : MonoBehaviour
         
 
         // Player movement
-        float inputX = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("Speed", Mathf.Abs(inputX));
+        float KeyboardInput = Input.GetAxisRaw("Horizontal");
+        float inputTotal = KeyboardInput + inputX;
+        animator.SetFloat("Speed", Mathf.Abs(inputTotal));
 
         if(Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.D)){
             src.clip = playerWalk;
@@ -121,21 +128,21 @@ public class PCReuel : MonoBehaviour
 
 
 
-        if (inputX != 0)
+        if (inputTotal != 0)
         {
             bool flippers = inputX < 0;
             transform.rotation = Quaternion.Euler(new Vector3(0f, flippers ? 180f : 0f, 0f));
 
         }
 
-        if (inputX == 0)
+        if (inputTotal  == 0)
         {
             // src.Stop();
             
 
         }
 
-        rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(inputTotal * moveSpeed, rb.linearVelocity.y);
 
         // Ground check
         Vector2 checkDirection = Physics2D.gravity.normalized;
@@ -143,6 +150,34 @@ public class PCReuel : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(origin, checkDirection, groundCheckDistance, groundLayer);
         isGrounded = hit.collider != null;
     }
+
+     //Player Movement in Mobile
+    public void LeftMovementDown(){
+        inputX = -1f;
+        Debug.Log("Left");
+    }
+
+    public void OnUp(){
+        inputX = 0;
+         Debug.Log("Up");
+    }
+
+    public void RightMovementDown(){
+        inputX = 1f;
+    }
+ 
+    public void HoldBox(){
+        holdingBox = true;
+    } 
+
+    public void ReleaseBox(){
+        holdingBox = false;
+    }
+
+    public void FlipSwitch(){
+        flipSwitch = true;
+    }
+
 
     void OnTriggerEnter2D(Collider2D other){
         
@@ -205,6 +240,6 @@ public class PCReuel : MonoBehaviour
             
             }
     }
+    
    
- 
 }

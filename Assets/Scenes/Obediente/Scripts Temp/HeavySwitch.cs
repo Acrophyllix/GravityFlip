@@ -5,6 +5,7 @@ public class HeavySwitch : MonoBehaviour
     public GameObject HeavyBox;
     private Rigidbody2D[] hbArray;
     private int heavyBCount;
+    private bool flippedSwitch;
 
     // Interface
     public Collider2D player;
@@ -30,9 +31,10 @@ public class HeavySwitch : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && flippedSwitch)
         {
             flipped = !flipped;
+            flippedSwitch = false;
             ApplySwitchState(flipped);
         }
     }
@@ -78,5 +80,9 @@ public class HeavySwitch : MonoBehaviour
         {
             hbArray[i].constraints = RigidbodyConstraints2D.FreezePositionX;
         }
+    }
+
+    public void FlippedSwitch(){
+        flippedSwitch = true;
     }
 }

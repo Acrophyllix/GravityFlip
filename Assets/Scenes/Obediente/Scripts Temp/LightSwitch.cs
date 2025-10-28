@@ -5,6 +5,7 @@ public class LightSwitch : MonoBehaviour
     public GameObject LightBox;
     private Rigidbody2D[] lbArray;
     private int lightBCount;
+    private bool flippedSwitch;
 
     // Interface
     public Collider2D player;
@@ -30,9 +31,10 @@ public class LightSwitch : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && flippedSwitch)
         {
             flipped = !flipped;
+            flippedSwitch = false;
             ApplySwitchState(flipped);
         }
     }
@@ -78,5 +80,9 @@ public class LightSwitch : MonoBehaviour
         {
             lbArray[i].constraints = RigidbodyConstraints2D.FreezePositionX;
         }
+    }
+    
+    public void FlippedSwitch(){
+        flippedSwitch = true;
     }
 }
