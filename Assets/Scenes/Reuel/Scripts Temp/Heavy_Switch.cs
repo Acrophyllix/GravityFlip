@@ -79,4 +79,12 @@ public class Heavy_Switch : MonoBehaviour
             hbArray[i].constraints = RigidbodyConstraints2D.FreezePositionX;
         }
     }
+
+    public void FlippedSwitch(){
+        if (playerInRange)
+        {
+            flipped = !flipped;
+            ApplySwitchState(flipped);
+        }
+    }
 }

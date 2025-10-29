@@ -184,6 +184,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf3f10fc7039ae449add8cce901e530, type: 3}
+--- !u!114 &18383652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4954161221539657544, guid: faf3f10fc7039ae449add8cce901e530, type: 3}
+  m_PrefabInstance: {fileID: 18383651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013574495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41850051f6bbc54f9a6f840af830325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &27405480
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +414,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7921299878169338823, guid: b87127912accb714e916f8cd84fc88e9, type: 3}
   m_PrefabInstance: {fileID: 38197278}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &38197280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8294014995560548188, guid: b87127912accb714e916f8cd84fc88e9, type: 3}
+  m_PrefabInstance: {fileID: 38197278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38197279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6d3adab08a9f44bb50fe08fc38b549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &39037893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2574,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5386896328780242664, guid: b011016b5e1d8494b962529d2fb8f84a, type: 3}
   m_PrefabInstance: {fileID: 372364547}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &372364549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 887615669007296371, guid: b011016b5e1d8494b962529d2fb8f84a, type: 3}
+  m_PrefabInstance: {fileID: 372364547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372364548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d282dd69a9307a5478ab3b97c465f065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &377781448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7020225699717654495, guid: cbaa950ccd46d364e8d237be007dfb84, type: 3}
@@ -3184,6 +3217,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2100247352962956703, guid: b011016b5e1d8494b962529d2fb8f84a, type: 3}
   m_PrefabInstance: {fileID: 448323311}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &448323314 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 199946588852661470, guid: b011016b5e1d8494b962529d2fb8f84a, type: 3}
+  m_PrefabInstance: {fileID: 448323311}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41850051f6bbc54f9a6f840af830325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &471537861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15736,6 +15780,90 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 448323314}
+        m_TargetAssemblyTypeName: LightSwitch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 372364549}
+        m_TargetAssemblyTypeName: Light_Switch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2090873902}
+        m_TargetAssemblyTypeName: Heavy_Switch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 38197280}
+        m_TargetAssemblyTypeName: HeavySwitch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 18383652}
+        m_TargetAssemblyTypeName: LightSwitch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1798583316}
+        m_TargetAssemblyTypeName: LightSwitch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1711771786}
+        m_TargetAssemblyTypeName: HeavySwitch, Assembly-CSharp
+        m_MethodName: FlippedSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1140255321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26886,6 +27014,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7921299878169338823, guid: 232fd27629271a04d85d639d2e1d5994, type: 3}
   m_PrefabInstance: {fileID: 1711771784}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1711771786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8294014995560548188, guid: 232fd27629271a04d85d639d2e1d5994, type: 3}
+  m_PrefabInstance: {fileID: 1711771784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711771785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6d3adab08a9f44bb50fe08fc38b549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1713908260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4656819744677257018, guid: ae6aa3f0afda2504ea959b738e63f973, type: 3}
@@ -27491,6 +27630,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5386896328780242664, guid: f134ee8784075a4428cb871b114e1a4c, type: 3}
   m_PrefabInstance: {fileID: 1798583314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798583316 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 199946588852661470, guid: f134ee8784075a4428cb871b114e1a4c, type: 3}
+  m_PrefabInstance: {fileID: 1798583314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798583315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41850051f6bbc54f9a6f840af830325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853356601
 GameObject:
   m_ObjectHideFlags: 0
@@ -29487,6 +29637,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5340612793495027358, guid: b08d63b0aa952cb44a8bdbdd2edf34a6, type: 3}
   m_PrefabInstance: {fileID: 2090873900}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2090873902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4549516632045947115, guid: b08d63b0aa952cb44a8bdbdd2edf34a6, type: 3}
+  m_PrefabInstance: {fileID: 2090873900}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090873901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c8c1e34bb79a9499b88ed0922e5c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2104581223
 GameObject:
   m_ObjectHideFlags: 0

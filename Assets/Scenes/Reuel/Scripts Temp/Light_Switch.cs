@@ -79,4 +79,12 @@ public class Light_Switch : MonoBehaviour
             lbArray[i].constraints = RigidbodyConstraints2D.FreezePositionX;
         }
     }
+    
+    public void FlippedSwitch(){
+        if (playerInRange)
+        {
+            flipped = !flipped;
+            ApplySwitchState(flipped);
+        }
+    }
 }

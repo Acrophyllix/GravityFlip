@@ -83,6 +83,10 @@ public class LightSwitch : MonoBehaviour
     }
     
     public void FlippedSwitch(){
-        flippedSwitch = true;
+        if (playerInRange)
+        {
+            flipped = !flipped;
+            ApplySwitchState(flipped);
+        }
     }
 }

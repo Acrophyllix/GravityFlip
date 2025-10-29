@@ -34,7 +34,6 @@ public class HeavySwitch : MonoBehaviour
         if (playerInRange && flippedSwitch)
         {
             flipped = !flipped;
-            flippedSwitch = false;
             ApplySwitchState(flipped);
         }
     }
@@ -83,6 +82,10 @@ public class HeavySwitch : MonoBehaviour
     }
 
     public void FlippedSwitch(){
-        flippedSwitch = true;
+        if (playerInRange)
+        {
+            flipped = !flipped;
+            ApplySwitchState(flipped);
+        }
     }
 }
