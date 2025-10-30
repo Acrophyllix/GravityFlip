@@ -2061,8 +2061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854226a3bd07e5441895e89967afc029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 5
-  thisLevel: 6
+  nextLevelInt: 5
+  thisLevelInt: 4
 --- !u!114 &173306859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41961,6 +41961,7 @@ MonoBehaviour:
   _timer: 0
   timerEnabled: 1
   _killedBy: {fileID: 1550470405}
+  isTutorial: 0
   losePanel: {fileID: 1838371430}
   WIN: {fileID: 2061728968}
   PanelBox: {fileID: 1315503795}
@@ -42312,7 +42313,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5766049532556446093, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

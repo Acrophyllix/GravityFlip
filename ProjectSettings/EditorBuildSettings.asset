@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main/Splash/SplashScreenScene.unity
     guid: 8e67dc1a97545bb46b9b8f635e3e0b83
-  - enabled: 0
-    path: Assets/Scenes/Main/Level/Tutorial.unity
-    guid: b511aa08093c3c24b98a1180d5b27b3e
+  - enabled: 1
+    path: Assets/Scenes/Main/Menu/MainMenu.unity
+    guid: ba31ad422cabde941af7509e60f8f9bd
   - enabled: 1
     path: Assets/Scenes/Main/Level/Tutorial2.unity
     guid: cfbc4ee3ee3a4c545bf90a0f99a6039b
@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main/Level/Level 3.unity
     guid: 58875a04f76f5644dad912642da8777a
-  - enabled: 1
-    path: Assets/Scenes/Main/Menu/MainMenu.unity
-    guid: ba31ad422cabde941af7509e60f8f9bd
   - enabled: 1
     path: Assets/Scenes/Obediente/Sprites/Materials/World1FunctionalLayouts/Level
       4.unity

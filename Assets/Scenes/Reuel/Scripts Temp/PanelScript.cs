@@ -22,7 +22,7 @@ public class WinLose : MonoBehaviour
 
     //UI
     [SerializeField] private TextMeshProUGUI _killedBy;
-
+    [SerializeField] private bool isTutorial;
     public GameObject losePanel;
     public GameObject WIN;
     public GameObject PanelBox;
@@ -111,29 +111,33 @@ public class WinLose : MonoBehaviour
 
 
     public void ExitLevel()
-    {
-        WIN.SetActive(true);   
-        _killedBy.text = "";
-        //Move next level
-        //Accumulate the score
+    {   
+        if(isTutorial){
+            WIN.SetActive(true);
+            Time.timeScale = 0f;   
+            Debug.Log("tutoral");
+        }else{
+            WIN.SetActive(true);   
+            _killedBy.text = "";
+            //Move next level
+            //Accumulate the score
+            PanelBox.SetActive(true);
 
 
-        PanelBox.SetActive(true);
+            _totalTime = (int)_playerScript.totalTime;
+            int totalTimeScore = 120 - _totalTime / 5;
+            _livesLeftScore = _playerScript.lives * 10;
+            _fragmentsScore = _playerScript.fragmentsCollected * 2;
+            score = totalTimeScore + _livesLeftScore + _fragmentsScore + previousScoreLevel;
+            nextScoreLevel = score;
 
-
-        _totalTime = (int)_playerScript.totalTime;
-        int totalTimeScore = 120 - _totalTime / 5;
-        _livesLeftScore = _playerScript.lives * 10;
-        _fragmentsScore = _playerScript.fragmentsCollected * 2;
-        score = totalTimeScore + _livesLeftScore + _fragmentsScore + previousScoreLevel;
-        nextScoreLevel = score;
-
-        _totalTimeField.text = _totalTime.ToString();
-        _livesLeftField.text = _playerScript.lives.ToString();
-        _fragmentsField.text = _playerScript.fragmentsCollected.ToString() + " /15";
-        _scoreField.text = score.ToString();
-        Time.timeScale = 0f;
-        DisableSFX();
+            _totalTimeField.text = _totalTime.ToString();
+            _livesLeftField.text = _playerScript.lives.ToString();
+            _fragmentsField.text = _playerScript.fragmentsCollected.ToString() + " /15";
+            _scoreField.text = score.ToString();
+            Time.timeScale = 0f;
+            DisableSFX();
+        }
     }
     
     void DisableSFX(){

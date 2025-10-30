@@ -16,7 +16,6 @@ public class PCReuel : MonoBehaviour
     //Mobile Movement 
     private bool holdingBox;
     private bool notHoldingBox;
-    private bool flipSwitch;
     float inputX = 0f;
 
     //Lives
@@ -51,7 +50,7 @@ public class PCReuel : MonoBehaviour
     void Start()
     {   
         rb = GetComponent<Rigidbody2D>();
-
+        inputX = 0;
 
     }
 
@@ -154,12 +153,11 @@ public class PCReuel : MonoBehaviour
      //Player Movement in Mobile
     public void LeftMovementDown(){
         inputX = -1f;
-        Debug.Log("Left");
     }
 
     public void OnUp(){
         inputX = 0;
-         Debug.Log("Up");
+        
     }
 
     public void RightMovementDown(){
@@ -173,11 +171,6 @@ public class PCReuel : MonoBehaviour
     public void ReleaseBox(){
         holdingBox = false;
     }
-
-    public void FlipSwitch(){
-        flipSwitch = true;
-    }
-
 
     void OnTriggerEnter2D(Collider2D other){
         

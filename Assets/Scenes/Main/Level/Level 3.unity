@@ -2028,7 +2028,8 @@ PrefabInstance:
       propertyPath: nextLevelButton
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7667803990536147100, guid: 768a8dea2efc50044a253a72e291b949, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3457,9 +3458,9 @@ RectTransform:
   - {fileID: 1824060914}
   m_Father: {fileID: 1020638793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1059, y: -578}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6, y: -78}
   m_SizeDelta: {x: 801.5239, y: 402.63806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &193050243
@@ -13554,8 +13555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854226a3bd07e5441895e89967afc029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 0
-  thisLevel: 4
+  nextLevelInt: 0
+  thisLevelInt: 0
 --- !u!224 &1020638793
 RectTransform:
   m_ObjectHideFlags: 0
