@@ -41831,7 +41831,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.18}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 0.18, y: 0.18}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -42229,14 +42229,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1817788942}
     m_Modifications:
+    - target: {fileID: 825529133665723304, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0639
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: slideDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: plates.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: 'plates.Array.data[0]'
       value: 
-      objectReference: {fileID: 1922886087}
+      objectReference: {fileID: 696348929}
     - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: 'plates.Array.data[1]'
       value: 
@@ -42258,9 +42266,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 696348929}
     - target: {fileID: 4334590650422956838, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2023585544331963605, guid: 0f95c097f851be946b193d398c7c8da4, type: 3}
+    - target: {fileID: 4334590650422956838, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5085159800105003504, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5041738281729281611, guid: 0f95c097f851be946b193d398c7c8da4, type: 3}
     - target: {fileID: 5085159800105003504, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -42270,8 +42286,24 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 6888220873116136225, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4890457220098404552, guid: e649353989cc67a48a1b085fb74d9434, type: 3}
+    - target: {fileID: 6888220873116136225, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.343189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.343189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62287927
       objectReference: {fileID: 0}
     - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42279,7 +42311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19550002
+      value: -0.015
       objectReference: {fileID: 0}
     - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42312,6 +42344,10 @@ PrefabInstance:
     - target: {fileID: 8281277093327075065, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715525087195247761, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.048
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5766049532556446093, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
