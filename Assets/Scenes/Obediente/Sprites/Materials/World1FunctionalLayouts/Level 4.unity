@@ -3841,7 +3841,7 @@ GameObject:
   - component: {fileID: 304095444}
   m_Layer: 0
   m_Name: LeftBoundary (67)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4028,7 +4028,7 @@ GameObject:
   - component: {fileID: 308082353}
   m_Layer: 0
   m_Name: LeftBoundary (68)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5592,7 +5592,7 @@ GameObject:
   - component: {fileID: 421555152}
   m_Layer: 0
   m_Name: LeftBoundary (65)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6263,7 +6263,7 @@ GameObject:
   - component: {fileID: 513186569}
   m_Layer: 0
   m_Name: LeftBoundary (76)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9857,7 +9857,7 @@ GameObject:
   - component: {fileID: 652408006}
   m_Layer: 0
   m_Name: LeftBoundary (63)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12376,7 +12376,7 @@ GameObject:
   - component: {fileID: 809199443}
   m_Layer: 0
   m_Name: LeftBoundary (71)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14631,7 +14631,7 @@ GameObject:
   - component: {fileID: 970387912}
   m_Layer: 0
   m_Name: LeftBoundary (70)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14960,6 +14960,11 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 1433533133}
     weight: 1
+--- !u!4 &986739551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 980256662444226978, guid: 9d7e017c00481bf43973396b7a228e9e, type: 3}
+  m_PrefabInstance: {fileID: 1381912281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &990565400
 GameObject:
   m_ObjectHideFlags: 0
@@ -18585,7 +18590,7 @@ GameObject:
   - component: {fileID: 1251451091}
   m_Layer: 0
   m_Name: Ceiling (3)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19017,7 +19022,7 @@ GameObject:
   - component: {fileID: 1270118945}
   m_Layer: 0
   m_Name: Ceiling (2)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19872,7 +19877,7 @@ GameObject:
   - component: {fileID: 1306046237}
   m_Layer: 0
   m_Name: LeftBoundary (64)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27140,7 +27145,7 @@ GameObject:
   - component: {fileID: 1740393222}
   m_Layer: 0
   m_Name: LeftBoundary (74)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27438,7 +27443,7 @@ GameObject:
   - component: {fileID: 1749615611}
   m_Layer: 0
   m_Name: LeftBoundary (66)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30043,7 +30048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acd0d57c960b8b41bd5fa5023657341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 986739551}
   minX: 0.5
   maxX: 104.5
 --- !u!1 &1901273478
@@ -30060,7 +30065,7 @@ GameObject:
   - component: {fileID: 1901273480}
   m_Layer: 0
   m_Name: Ceiling (5)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30209,7 +30214,7 @@ GameObject:
   - component: {fileID: 1903341686}
   m_Layer: 0
   m_Name: LeftBoundary (75)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30602,7 +30607,7 @@ GameObject:
   - component: {fileID: 1917490774}
   m_Layer: 0
   m_Name: LeftBoundary (61)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31276,7 +31281,7 @@ GameObject:
   - component: {fileID: 1983235060}
   m_Layer: 0
   m_Name: LeftBoundary (73)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32411,7 +32416,7 @@ GameObject:
   - component: {fileID: 2071759606}
   m_Layer: 0
   m_Name: LeftBoundary (72)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33111,7 +33116,7 @@ GameObject:
   - component: {fileID: 2115832410}
   m_Layer: 0
   m_Name: LeftBoundary (62)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42248,7 +42253,7 @@ PrefabInstance:
     - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: 'plates.Array.data[1]'
       value: 
-      objectReference: {fileID: 2001486941}
+      objectReference: {fileID: 696348929}
     - target: {fileID: 2233321469641917971, guid: da6c751142d85d54bb697d7a0ae7a939, type: 3}
       propertyPath: 'plates.Array.data[2]'
       value: 
