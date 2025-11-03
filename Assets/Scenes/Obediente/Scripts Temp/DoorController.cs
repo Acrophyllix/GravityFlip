@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
@@ -82,4 +83,6 @@ public class DoorController : MonoBehaviour
             playerIsOnDoor = true;
         }
     }
+
+  
 }

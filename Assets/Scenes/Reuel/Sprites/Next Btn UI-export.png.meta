@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5a86875e5b0682f499d16d147e603f27
+guid: f12cf9347589f324f85bf9b9707e3986
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1958676783162264248
-    second: PlayButton_0
+      213: 3885067061140122040
+    second: Next Btn UI-export_0
+  - first:
+      213: -4046565477361608072
+    second: Next Btn UI-export_1
+  - first:
+      213: -4635140769749826619
+    second: Next Btn UI-export_2
+  - first:
+      213: -3156156504960622929
+    second: Next Btn UI-export_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayButton_0
+      name: Next Btn UI-export_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 133
-        width: 1327
-        height: 784
+        x: 331
+        y: 1322
+        width: 470
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 845fecdd7d161d4e0800000000000000
-      internalID: -1958676783162264248
+      spriteID: 8b9e3db78e78ae530800000000000000
+      internalID: 3885067061140122040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Next Btn UI-export_1
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1322
+        width: 470
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a90815326b7d7c0800000000000000
+      internalID: -4046565477361608072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Next Btn UI-export_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 486
+        width: 772
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c38127270cacafb0800000000000000
+      internalID: -4635140769749826619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Next Btn UI-export_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 486
+        width: 772
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae984a71641334d0800000000000000
+      internalID: -3156156504960622929
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d0839101361392949ba8d97a80a004d2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlayButton_0: -1958676783162264248
+      Next Btn UI-export_0: 3885067061140122040
+      Next Btn UI-export_1: -4046565477361608072
+      Next Btn UI-export_2: -4635140769749826619
+      Next Btn UI-export_3: -3156156504960622929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

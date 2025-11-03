@@ -20,14 +20,18 @@ public class SceneManagement : MonoBehaviour
             SceneManager.LoadScene("Tutorial2");    
             Time.timeScale = 1f;
         }else{
-        SceneManager.LoadScene(thisLevel);
+        SceneManager.LoadScene(thisLevel); //Uses the name of the scene
         Time.timeScale = 1f;
         }
     }
     
     public void NextLevel(){
-        SceneManager.LoadScene(nextLevel);
+        SceneManager.LoadScene(nextLevel); //Uses the name of the scene
         Time.timeScale = 1f;
+
+        if(nextLevelInt == 5){
+            SceneManager.LoadScene("Outro");
+        }
     }
 
     public void MainMenu(){

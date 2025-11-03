@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class TutorialPanels : MonoBehaviour
 {
     public GameObject panel;
-    
+    private bool gHasTriggered = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {   
@@ -28,9 +28,11 @@ public class TutorialPanels : MonoBehaviour
     void OnCollisionEnter2D( Collision2D other){
 
         if(other.gameObject.CompareTag("Player") && this.gameObject.CompareTag("gLightBox") ){
-            panel.SetActive(true);
-            Time.timeScale = 0f;
-
+            if(!gHasTriggered){
+                gHasTriggered = true;
+                panel.SetActive(true);
+                Time.timeScale = 0f;
+            }
         
         }else if(other.gameObject.CompareTag("Player") && this.gameObject.CompareTag("rLightBox")){
             panel.SetActive(true);

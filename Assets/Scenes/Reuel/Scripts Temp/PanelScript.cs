@@ -37,11 +37,14 @@ public class WinLose : MonoBehaviour
     public bool isPlayerOnDoor;
     public string lastHitHazard;
 
+    //Unlocked Level System 
+    private int unlockingLevel;
     //SFX 
     [SerializeField] private AudioMixer mixer;
 
     public void Start()
     {   
+        unlockingLevel = 0;
         EnableSFX();
         Time.timeScale = 1f;
         previousScoreLevel = nextScoreLevel;
@@ -53,6 +56,7 @@ public class WinLose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+        
         isPlayerOnDoor = doorScript.playerIsOnDoor;
         lastHitHazard = _playerScript.lastHitHazard;
 
@@ -114,9 +118,8 @@ public class WinLose : MonoBehaviour
     {   
         if(isTutorial){
             WIN.SetActive(true);
-            Time.timeScale = 0f;   
-            Debug.Log("tutoral");
         }else{
+            UnlockNewLevel(); 
             WIN.SetActive(true);   
             _killedBy.text = "";
             //Move next level
@@ -138,6 +141,7 @@ public class WinLose : MonoBehaviour
             Time.timeScale = 0f;
             DisableSFX();
         }
+
     }
     
     void DisableSFX(){
@@ -152,6 +156,25 @@ public class WinLose : MonoBehaviour
         timerEnabled = value;
     }
 
+    public void UnlockNewLevel()
+	{
+        if(unlockingLevel < 1){
+            Debug.Log("Unclokielevel" + unlockingLevel);
 
+            unlockingLevel=10;
+
+            int ulValue = (PlayerPrefs.GetInt("unlockedLevel"));
+
+            Debug.Log(ulValue);
+
+            if(ulValue == 4){
+                //Nothing Happens Here :)
+            }else{	
+                PlayerPrefs.SetInt("unlockedLevel",ulValue + 1);
+                Debug.Log("Else "+ulValue);
+            }
+            PlayerPrefs.Save();
+        }
+	}
 
 }
